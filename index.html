@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Guys</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fullpage">
+        <div class="navbar">
+            <a href="">My QR</a>
+            <nav>
+                <ul id = "menuitems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><button class = "login" onclick="">Log In</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="loginform" class="loginpage">
+            <div class="formbox">
+                <div class="buttonbox">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="Register()" class="toggle-btn">Register</button>
+                </div>    
+                    <form id="login" class="input-login">
+                        <input type="text" class="input-field" placeholder="Username" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="checkbox" ><span>"Remember Password"</span>
+                        <button type="submit" class="submit-btn">Log In</button>
+                    </form>
+
+                    <form id="register" class="input-register">
+                        <input type="text" class="input-field" placeholder="First Name" required>
+                        <input type="text" class="input-field" placeholder="Last Name" required>
+                        <input type="text" class="input-field" placeholder="Username" required>
+                        <input type="password" class="input-field" placeholder="Password" required>
+                        <input type="datetime" class="input-field" placeholder="Date of birth" required>
+                        <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function Register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='110px';
+        }
+
+        var modal = document.getElementById('loginform');
+        window.onclick= function(event)
+        {
+            if(event.target == modal)
+            {
+                modal.style.display = "event";
+            }
+        }
+    </script>
+    
+</body>
+</html>
