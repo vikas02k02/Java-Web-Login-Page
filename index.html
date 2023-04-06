@@ -28,20 +28,20 @@
                     <button type="button" onclick="login()" class="toggle-btn">Log In</button>
                     <button type="button" onclick="Register()" class="toggle-btn">Register</button>
                 </div>    
-                    <form id="login" class="input-login">
-                        <input type="text" class="input-field" placeholder="Username" required>
-                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <form id="login" class="input-login" action="LoginServlet" method="post">
+                        <input type="text" class="input-field" name="UserId" placeholder="Username" required>
+                        <input type="password" class="input-field" name="Password" placeholder="Enter Password" required>
                         <input type="checkbox" class="checkbox" ><span>"Remember Password"</span>
                         <button type="submit" class="submit-btn">Log In</button>
                     </form>
 
-                    <form id="register" class="input-register">
-                        <input type="text" class="input-field" placeholder="First Name" required>
-                        <input type="text" class="input-field" placeholder="Last Name" required>
-                        <input type="text" class="input-field" placeholder="Username" required>
-                        <input type="password" class="input-field" placeholder="Password" required>
-                        <input type="datetime" class="input-field" placeholder="Date of birth" required>
-                        <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                    <form id="register" class="input-register" action="ResgisterServlet" method="post">
+                        <input type="text" class="input-field" name="fName" placeholder="First Name" required>
+                        <input type="text" class="input-field" name="lName" placeholder="Last Name" required>
+                        <input type="text" class="input-field" name="UserName" placeholder="Username" required>
+                        <input type="password" class="input-field" name="Password" placeholder="Password" required>
+                        <input type="datetime" class="input-field" name="DOB" placeholder="Date of birth" required>
+                        <input type="checkbox" class="checkbox" required><span>I agree to the terms and conditions</span>
                         <button type="submit" class="submit-btn">Register</button>
                     </form>
                 
@@ -74,7 +74,7 @@
             }
         }
     </script>
-<!--  change the line of the code for the sake of the god     -->
+
     
 </body>
 </html>
