@@ -18,7 +18,7 @@ Ministry raised the problem to make software based solution to make Paperless e-
 
                                                               OUR SOLUTION 
                                                               
-We solved the problem by making a web based software which shows the number of tickets availaible to tourist . Tourist can buy the tickets in advanced .
+We solved the problem by making a android based software which shows the number of tickets availaible to tourist . Tourist can buy the tickets in advanced .
 The ticket would be present in the form QR code which would be sent to the person in the form of password protected  pdf to tourist email which could only be opened with 
 passsword known to the person who booked .
 
@@ -29,10 +29,12 @@ The   QR  CODE would get expired after that day so that it can,t be reused.
                                                              TECHNOLOGY  USED
 
 Frontend :- HTML , CSS , JAVASCRIPT               
-Backend :- Java (Core Java , Advanced Java (Sevlet , JavaMail API , JDBC))                                     
+Backend :- Java (Core Java , Advanced Java (Sevlet , JavaMail API , JDBC))    
+Android Development , Firebase
 Database :- MySql                                      
-IDE :-Eclipse
+IDE :-Eclipse , Android Studio
 
 
                                                                PROJECT WORKING LAYOUT
 First Page is the login/Register page 
+https://vikas02k02.github.io/Java-Web-Login-Page/
